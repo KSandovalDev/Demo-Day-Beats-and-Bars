@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beats & Bars</title>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/theme-orange.css">
+  </head>
+  <body id="setup">
+
+     <div class="page-header text-center">
+        <h1 class="mb-0 super effect-static-text">Beats & Bars</h1>
+            <div id="navBtns">
+                <a href="/home" class="btn btn-default btn-sm">Profile</a>
+                <a href="/swiping" class="btn btn-default btn-sm">Swipe</a>
+                <a href="/matches" class="btn btn-default btn-sm">Matches</a>
+                <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+            </div>
+    </div>
+
+    <div class="container">
+      <form action="/userSetup" method="POST" enctype="multipart/form-data">
+        <div>
+          <label for="firstname">First Name:</label>
+          <input type="text" name="firstname" required />
+        </div>
+        <div>
+          <label for="lastname">Last Name:</label>
+          <input type="text" name="lastname" required />
+        </div>
+        <div>
+          <label for="age">Please Enter Age:</label>
+          <input type="number" id="age" name="age" min="13" max="120" />
+        </div>
+        <input type="file" name="file-to-upload" required />
+        <label for="photos"></label>
+        <h2>Enter your bio: </h2>
+        <textarea name="bio" id="" cols="30" rows="10" required></textarea>
+        <h2>Select 4 Genres: </h2>
+        <!-- GENRES SELECTS==================================================================================================-->
+        <div class="genres">
+          <label for="genre-select">Genres</label>
+          <select name="genre1" id="genre-select">
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Trap">Trap</option>
+            <option value="Soul/R&B">Soul/R&B</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Dancehall">Dancehall</option>
+            <option value="Pop">Pop</option>
+            <option value="Reggaeton">Reggaeton</option>
+            <option value="Bachata/Salsa">Bachata/Salsa</option>
+            <option value="Indie">Indie</option>
+            <option value="Singer/Songwriter">Singer/Songwriter</option>
+            <option value="Afrobeat">Afrobeat</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Latin Jazz">Latin Jazz</option>
+            <option value="Funk">Funk</option>
+            <option value="Rock">Rock</option>
+            <option value="Alternative">Alternative</option>
+            <option value="Prog Rock">Prog Rock</option>
+            <option value="Fusion">Fusion</option>
+            <option value="Country">Country</option>
+            <option value="Punk">Punk</option>
+            <option value="Metal">Metal</option>
+            <option value="Blues">Blues</option>
+          </select>
+        </div>
+        <div class="genres">
+          <label for="genre-select">Genres</label>
+          <select name="genre2" id="genre-select">
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Trap">Trap</option>
+            <option value="Soul/R&B">Soul/R&B</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Dancehall">Dancehall</option>
+            <option value="Pop">Pop</option>
+            <option value="Reggaeton">Reggaeton</option>
+            <option value="Bachata/Salsa">Bachata/Salsa</option>
+            <option value="Indie">Indie</option>
+            <option value="Singer/Songwriter">Singer/Songwriter</option>
+            <option value="Afrobeat">Afrobeat</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Latin Jazz">Latin Jazz</option>
+            <option value="Funk">Funk</option>
+            <option value="Rock">Rock</option>
+            <option value="Alternative">Alternative</option>
+            <option value="Prog Rock">Prog Rock</option>
+            <option value="Fusion">Fusion</option>
+            <option value="Country">Country</option>
+            <option value="Punk">Punk</option>
+            <option value="Metal">Metal</option>
+            <option value="Blues">Blues</option>
+          </select>
+        </div>
+        <div class="genres">
+          <label for="genre-select">Genres</label>
+          <select name="genre3" id="genre-select">
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Trap">Trap</option>
+            <option value="Soul/R&B">Soul/R&B</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Dancehall">Dancehall</option>
+            <option value="Pop">Pop</option>
+            <option value="Reggaeton">Reggaeton</option>
+            <option value="Bachata/Salsa">Bachata/Salsa</option>
+            <option value="Indie">Indie</option>
+            <option value="Singer/Songwriter">Singer/Songwriter</option>
+            <option value="Afrobeat">Afrobeat</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Latin Jazz">Latin Jazz</option>
+            <option value="Funk">Funk</option>
+            <option value="Rock">Rock</option>
+            <option value="Alternative">Alternative</option>
+            <option value="Prog Rock">Prog Rock</option>
+            <option value="Fusion">Fusion</option>
+            <option value="Country">Country</option>
+            <option value="Punk">Punk</option>
+            <option value="Metal">Metal</option>
+            <option value="Blues">Blues</option>
+          </select>
+        </div>
+        <div class="genres">
+          <label for="genre-select">Genres</label>
+          <select name="genre4" id="genre-select">
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Trap">Trap</option>
+            <option value="Soul/R&B">Soul/R&B</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Dancehall">Dancehall</option>
+            <option value="Pop">Pop</option>
+            <option value="Reggaeton">Reggaeton</option>
+            <option value="Bachata/Salsa">Bachata/Salsa</option>
+            <option value="Indie">Indie</option>
+            <option value="Singer/Songwriter">Singer/Songwriter</option>
+            <option value="Afrobeat">Afrobeat</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Latin Jazz">Latin Jazz</option>
+            <option value="Funk">Funk</option>
+            <option value="Rock">Rock</option>
+            <option value="Alternative">Alternative</option>
+            <option value="Prog Rock">Prog Rock</option>
+            <option value="Fusion">Fusion</option>
+            <option value="Country">Country</option>
+            <option value="Punk">Punk</option>
+            <option value="Metal">Metal</option>
+            <option value="Blues">Blues</option>
+          </select>
+        </div>
+        <!-- Instrument select============================================================================= -->
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="form-group">
+              <select class="form-control" name="instrument">
+                <option>Select Instrument</option>
+                <option>Piano</option>
+                <option>Bass</option>
+                <option>Guitar</option>
+                <option>Drums</option>
+                <option>Voice</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="form-group">
+              <select class="form-control" name="instrumentLevel">
+                <option>Select proficiency level</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="url">Enter your Instagram URL</label>
+
+          <input
+            type="url"
+            name="instagramLink"
+            id="url"
+            placeholder="https://example.com"
+            pattern="https://.*"
+            size="30"
+            required
+          />
+        </div>
+        <div>
+          <label for="url">Enter Spotify embed code</label>
+          <input type="text" name="spotifyCode" />
+        </div>
+        <div>
+          <label for="url">Enter Soundcloud embed code</label>
+          <input type="text" name="soundCloudCode" />
+        </div>
+        <div>
+          <label for="url">Enter Youtube embed code</label>
+          <input type="text" name="youtubeCode" />
+        </div>
+        <div>
+          <label for="looking-select">Looking For:</label>
+          <select name="looking" id="looking-select">
+            <option value="Someone to Jam with">Someone to Jam with</option>
+            <option value="Collaborators">Collaborators</option>
+            <option value="More musical connections">
+              More musical connections
+            </option>
+          </select>
+        </div>
+        <div>
+          <h2>Influences: </h2>
+          <input type="text" name="influences" id="influences" />
+        </div>
+        <input type="submit" name="submit" id="profileSubmit" value="submit" />
+        <!-- 
+
+        lookingfor   : String, - selects
+        influences   : [String], -->
+      </form>
+    </div>
+  </body>
+</html>

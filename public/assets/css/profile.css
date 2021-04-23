@@ -1,0 +1,255 @@
+.avatar{
+    width: 300px;
+    height:300px;
+}
+#centerContainer { width: 1100px; text-align: center; margin: 0px auto; }
+
+#loginOrSignup{
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
+
+h1,
+.slide-content .title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: var(--h1-size);
+    font-weight: var(--h1-weight);
+    line-height: 1.2;
+    font-family: var(--h1-font);
+    color: var(--primary-color);
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1 em,
+.slide-content .title em {
+    font-weight: 300;
+    display: block;
+    font-size: var(--h2-size);
+}
+
+h2 {
+    margin: 1.5rem 0;
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+    line-height: 1.2;
+    font-family: var(--h2-font);
+    /* color: var(--primary-t-color); */
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h2.featured {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: dimgrey;
+    color: white;
+}
+
+html{
+    background-color: dimgrey;
+}
+
+.jumbotron{
+    color: rgb(227,12,15);
+    background-color: dimgrey;
+
+
+}
+.btn-default {
+    background-color: dimgrey;
+}
+
+.btn{
+    /* background-color: rgb(243,56,36); */
+    color: white;
+    /* border: 1px solid #FC5130; */
+    font-size: 1.25rem;
+}
+
+#navBtns{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.btn:hover{
+  
+    background-color: tomato;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #FC5130;
+    color: white;
+}
+#msgBtn:hover{
+  
+    background-color: tomato;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #FC5130;
+    color: white;
+}
+
+#signUp{
+    font-family: 'Poppins', sans-serif;
+    background-color:dimgray;
+    color: rgb(227,12,15);
+    border-bottom: 1px solid dimgrey !important;
+}
+#login{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(227,12,15);
+    border-bottom: 1px solid dimgrey !important;
+}
+#nav{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(227,12,15);
+    border-bottom: 1px solid dimgrey !important;
+}
+#userProfile{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(227,12,15);
+    border-bottom: 1px solid dimgrey !important;
+}
+
+.stageProfile{
+    background-color: rgb(212, 206, 206);
+    margin-top: 45px;
+    margin-bottom: 45px;
+    position: absolute;
+    height: 900px;
+    overflow: scroll;
+    width: 100%;
+    transition: transform 450ms ease-in-out;
+}
+
+.swipedRight{
+    transform: translateX(140%);
+}
+.swipedLeft{
+    transform: translateX(-140%);
+}
+.cardsContainer{
+    position: relative;
+    height: 990px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -webkit-text-fill-background-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-control{
+    background-color: white !important;
+    color: black !important;
+}
+
+
+.mb-0.super.effect-static-text{
+    font-size: 6rem !important;
+}
+
+#setProfile{
+    margin-left: 81%;
+    margin-bottom: 18px;
+    background-color: tomato;
+}
+
+#editProfile{
+    color: white;
+    background-color: tomato;;
+}
+#setProfile:hover{
+    background-color: #FC5130;
+}
+#personProfile{
+    text-align: center;
+    /* border: 2px solid rgb(145, 139, 139); */
+    margin-bottom: 18px;
+}
+
+.page-header.text-center{
+    border-bottom: 1px solid dimgrey !important;
+}
+
+.swipeBtns{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 36px;
+   
+}
+
+#skip{
+    margin-right: 108px;
+    color: whitesmoke;
+    background-color: #C42021;
+}
+#play{
+    color: whitesmoke;
+    background-color:#76F7BF;
+}
+
+#skip:hover{
+    background-color: #FC5130;
+}
+#play:hover{
+    background-color: #30fc9d;
+}
+
+#form {
+    width: 50%;
+    margin-left: 26%;
+    display: flex;
+    justify-content: center;
+}
+
+#setup{
+    color: white;
+}
+
+#profileSubmit{
+    background-color: #FC5130;
+    color: white;
+    border: 1px solid #FC5130;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#profileSubmit:hover{
+    background-color: red;
+}
+
+.outlineProfile{
+    background-color: rgb(212, 206, 206);
+}
+
+.loginBtns{
+    background-color: rgb(243,56,36);
+}

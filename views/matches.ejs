@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <title>Beats & Bars</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
+    <link rel="stylesheet" href="/assets/css/theme-orange.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="text/javascript" src="assets/js/swiping.js"></script>
+</head>
+<body>
+    <div class="page-header text-center">
+        <h1 class="mb-0 super effect-static-text"> Beats & Bars</h1>
+    </div>
+
+    <div id="navBtns">
+        <a href="/home" class="btn btn-default btn-sm">Profile</a>
+        <a href="/swiping" class="btn btn-default btn-sm">Swipe</a>
+        <a href="/matches" class="btn btn-default btn-sm">Matches</a>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="container">
+    <!-- if you want to display a string in EJS use = if you wanna display code use - -->
+            <div class="cardsContainer">
+                <% for(let i =0;i<filtered.length;i++){ %>
+                    <div class="outlineProfile" >
+                        <img src="<%= filtered[i][0].imgPath %>" alt="" class="avatar"> 
+                        <!-- <form action="/likeUser" method="POST" >
+                            <input type="text" name="userEmail" value="<%= filtered[i][0].username %>" hidden>
+                            <button class="play" type="submit">Play</button>
+                        </form> -->
+                        <a href="/chat/<%= filtered[i][0].username %>"><button id="msgBtn">Message</button></a>
+                        <!-- <button disabled="disabled" >Unmatch</button> -->
+                        <h3>First Name: <%= filtered[i][0].firstname %></h3>
+                        <h3>Last Name: <%= filtered[i][0].lastname %></h3>
+                        <h3><%= filtered[i][0].name %>, <%= filtered[i][0].age %></h3>
+                        <h3>Bio: <%= filtered[i][0].bio %></h3>
+                        <h3>Genres: <%= filtered[i][0].genre1 %>, <%= filtered[i][0].genre2 %>, <%= filtered[i][0].genre3 %>, <%= filtered[i][0].genre4 %></h3>
+                        <h3>Influences: <%= filtered[i][0].influences %></h3>
+                        <h3>Instruments & Level <%= filtered[i][0].instrument %>, level :<%= filtered[i][0].instrumentLevel %></h3>
+                        <h3>Instagram: <%= filtered[i][0].instagramLink %></h3> 
+                        <h3>Looking for: <%= filtered[i][0].looking %></h3>
+                        <p><%- filtered[i][0].spotifyCode %></p>
+                        <p><%- filtered[i][0].youtubeCode %></p>
+                        <p><%- filtered[i][0].soundCloudCode %></p>
+                    </div>
+                <% } %>
+            </div>
+    </div>
+   
+</body>
+</html>
